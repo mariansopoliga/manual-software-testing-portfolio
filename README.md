@@ -1,29 +1,54 @@
-# Manual Testing Portfolio – Marián Sopoliga
+# Manual Software Testing Portfolio
 
-Welcome to my manual QA testing portfolio. This repository documents my practical experience with **manual software testing**, including real test case creation, execution results, and bug reporting using industry-standard tools like **TestRail** and **Jira**.
-
-Each folder in this repository represents a separate test project or module. All tests were performed on public test environments and are intended to demonstrate my hands-on skills in structured test design and defect documentation.
-
----
-
-## 🧰 Tools & Technologies Used
-
-- **TestRail** – for managing and executing manual test cases
-- **Jira** – for logging bugs and tracking issue resolution
-- **Chrome DevTools** – for testing & reproduction steps
-- **GitHub** – version control and public portfolio
+Welcome to my QA testing portfolio — a growing collection of hands-on manual testing projects.  
+Each project showcases structured test case design, exploratory testing, documentation, and real-world validation using tools like Postman, TestRail, and Jira.
 
 ---
 
-## 📂 Projects Included
+## 📁 Projects Included
 
-- [`login-functionality`](./login-functionality)  
-  Manual test execution and bug report for login/logout behavior with edge cases
+### 1. `login-functionality`  
+Manual test coverage for login/logout flow at [the-internet.herokuapp.com](https://the-internet.herokuapp.com/login)
+
+**Included:**
+- ✅ Test cases C1–C15 with structured reports
+- 📄 Summary & full test execution documentation
+- 🐞 Bug report with supporting screenshot (edge-case: back button access after logout)
+
+> Tools used: Google Sheets, Adobe Acrobat, exploratory testing
+
+---
+
+### 2. `api-testing-jsonplaceholder`  
+API testing project using [JSONPlaceholder](https://jsonplaceholder.typicode.com) and Postman.
+
+**Included:**
+- ✅ 5 functional API test cases (GET & POST)
+- 📸 Screenshot evidence of all test responses
+- 📄 Markdown-based documentation
+
+> Tools used: Postman, JSON, REST APIs, response validation
+
+---
+
+## 🛠️ Tools Used
+- Postman
+- TestRail (local usage)
+- Jira (local usage for bug documentation)
+- GitHub
+- Markdown
+- Adobe PDF / screenshots
 
 ---
 
 ## 👤 About Me
 
-I'm transitioning into IT from an international service and operations background, now focused on QA, bug reporting, and digital systems. I enjoy structured problem-solving and ensuring quality user experiences.
+I'm Marian Sopoliga — an aspiring QA professional transitioning into software testing after years of international experience in service and tech support roles.
 
-Visit my LinkedIn: [linkedin.com/in/marian-sopoliga](https://linkedin.com/in/marian-sopoliga)
+📫 [LinkedIn Profile](https://www.linkedin.com/in/marian-sopoliga/)
+
+---
+
+## 📌 Note
+
+This portfolio is being expanded regularly with new scenarios, exploratory testing, and API automation examples.
