@@ -1,65 +1,64 @@
-# API Testing – JSONPlaceholder  
-Manual test execution using Postman (GET + POST requests)  
-Project for entry-level QA portfolio
+# API Testing – JSONPlaceholder
 
-## ✅ Tested Endpoint  
-**Base URL:** `https://jsonplaceholder.typicode.com/posts`  
-**API Type:** Public REST API (Mock)
+This folder contains a simple API testing project using Postman and the public JSONPlaceholder REST API.
+The goal was to practice manual validation of HTTP requests, test different input scenarios, and analyze API responses.
 
 ---
 
-## 📂 Folder Structure
+## ✅ Scope
 
-postman-api-testing/  
-├── README.md  
-├── postman-request-screenshots/  
-│   ├── TC01_valid_get_post_1_response.png  
-│   ├── TC02_invalid_get_post_9999.png  
-│   ├── TC03_create_new_post_response.png  
-│   ├── TC04_get_all_posts.png  
-│   └── TC05_post_missing_title_field.png  
+- Manual testing of public REST API endpoints using Postman
+- Creating and executing both positive and negative test cases
+- Validating API responses (status codes, response body, headers)
+- Understanding mock API behavior and test data isolation
 
 ---
 
-## 🧪 Test Cases Overview
+## 🧪 Covered Test Cases
 
-| TC ID | Method | Endpoint   | Test Type      | Description                             |
-|-------|--------|------------|----------------|-----------------------------------------|
-| TC01  | GET    | /posts/1   | Positive Test  | Valid post retrieval by ID              |
-| TC02  | GET    | /posts/9999| Negative Test  | Invalid post ID returns empty/404       |
-| TC03  | POST   | /posts     | Positive Test  | Create new post with valid data         |
-| TC04  | GET    | /posts     | List Test      | Retrieve list of all posts (100+)       |
-| TC05  | POST   | /posts     | Negative Test  | Missing required field: `title`         |
+| TC ID | Method | Endpoint     | Test Type      | Description                             |
+|-------|--------|--------------|----------------|-----------------------------------------|
+| TC01  | GET    | /posts/1     | Positive Test  | Valid post retrieval by ID              |
+| TC02  | GET    | /posts/9999  | Negative Test  | Invalid post ID returns empty/404       |
+| TC03  | POST   | /posts       | Positive Test  | Create new post with valid data         |
+| TC04  | GET    | /posts       | List Test      | Retrieve list of all posts (100+)       |
+| TC05  | POST   | /posts       | Negative Test  | Missing required field: `title`         |
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshot Evidence
 
-All responses were verified and saved inside `/postman-request-screenshots/` for each test case.  
-Each screenshot includes request method, URL, status code, and response body.
+Screenshots were taken for each test case and saved in the project folder.
+Each screenshot includes the request method, endpoint, status code, and returned body.
 
 ---
 
 ## 💡 What I Learned
 
-### Understanding `"userId"` Field  
-In TC03 and TC05, we used a field like `"userId": 99` or `"userId": 42`. In a real system, this links the post to a valid authenticated user.  
-In this mock API, it's just a placeholder that accepts any number.
+### `"userId"` in Mock APIs
+- Used placeholder values such as `"userId": 99` and `"userId": 42`
+- In a real-world application, this would be tied to an authenticated user
+- JSONPlaceholder accepts any numeric `userId`, no authentication required
 
-### Why `"userId": 42` in Negative Test (TC05)?  
-To isolate the test to **missing title only** — not an invalid user. Keeping `userId` valid ensures the error is caused by the missing `"title"` field.
+### Testing Strategy
+- TC05 intentionally omits the required field `"title"` to simulate a negative case
+- This helps evaluate how the system handles incomplete payloads
 
-### Fake API Behavior  
-JSONPlaceholder accepts even invalid input. For example, TC05 returns `201 Created` even though `"title"` is missing. This shows mock APIs don’t enforce validation — another reason real testing environments matter.
-
----
-
-## 📌 Tools Used
-- Postman (desktop)
-- Windows 11
-- JSONPlaceholder test API
+### Mock API Behavior
+- JSONPlaceholder is non-strict: even invalid POST data often returns a success code (`201 Created`)
+- Reinforced the importance of validating APIs in real environments with real backend logic
 
 ---
 
-## 📘 Notes  
-This project simulates real-world API testing manually, with no automation. Ideal for entry-level QA portfolio development.
+## 🔧 Tools Used
+- **Postman** (desktop app)
+- **Windows 11**
+- **JSONPlaceholder** – https://jsonplaceholder.typicode.com
+
+---
+
+## 📘 Notes
+This is a beginner-friendly API testing exercise intended to demonstrate testing logic, scenario thinking, and manual testing skills without automation.
+
+Created by **Marián Sopoliga**  
+[GitHub Portfolio](https://github.com/mariansopoliga/manual-software-testing-portfolio)
