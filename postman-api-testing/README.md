@@ -1,4 +1,4 @@
-# API Testing – JSONPlaceholder  
+postman-api-testing/ 
 Manual test execution using Postman (GET + POST requests)  
 Project for entry-level QA portfolio  
 
