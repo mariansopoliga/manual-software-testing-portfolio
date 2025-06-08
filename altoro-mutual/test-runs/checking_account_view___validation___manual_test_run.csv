@@ -1,0 +1,368 @@
+"ID","Title","Assigned To","Case ID","Comment","Defects","Elapsed","Estimate","Forecast","In Progress","Plan","Plan ID","Priority","References","Run","Run Configuration","Run ID","Section","Section Depth","Section Description","Status","Tested By","Tested On","Type","Version"
+"T60","TC01 – View Account Summary","","C71","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).  
+Steps followed as per test case instructions.
+Account “800001 - Checking” was selected successfully from the dropdown.  
+Account Summary page loaded correctly with balance, transaction history, and header information displayed as expected.
+No functional issues observed.  
+Screenshot saved for documentation.
+","","","120s","120s","","","","Medium","","Checking Account View & Validation – Manual Test Run","","R5","Checking Account View & Validation","1","Scope:
+
+This subsection focuses on validation of the Account Overview page for the 800001 Checking account. It includes tests for account selection, balance and transaction visibility, dropdown behavior, scroll functionality, and session-based access control.
+
+General Preconditions:
+
+Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+Tester is logged in using valid credentials: admin / admin  
+Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+The 800001 Checking account is selected from the dropdown menu
+
+Test Environment:
+
+Operating System: Windows 11 Pro (64-bit)  
+Browser: Google Chrome Version 125.0.x  
+Display Resolution: 1920 × 1080  
+Network: Stable wired connection  
+TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Passed","Marian Sopoliga","5/31/2025 9:14 PM","Functional",""
+"T61","TC02 – Switch Account View from Corporate to Checking and Back to Corporate","","C72","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).
+Steps followed as per test case instructions.
+After switching accounts and using browser navigation, the Corporate Account Summary page was reloaded successfully with correct data.
+Balance, transaction history, and header details matched the expected state for “800000 - Corporate”.
+No functional issues observed.
+Screenshot sequence saved for documentation.
+","","","120s","120s","","","","Medium","","Checking Account View & Validation – Manual Test Run","","R5","Checking Account View & Validation","1","Scope:
+
+This subsection focuses on validation of the Account Overview page for the 800001 Checking account. It includes tests for account selection, balance and transaction visibility, dropdown behavior, scroll functionality, and session-based access control.
+
+General Preconditions:
+
+Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+Tester is logged in using valid credentials: admin / admin  
+Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+The 800001 Checking account is selected from the dropdown menu
+
+Test Environment:
+
+Operating System: Windows 11 Pro (64-bit)  
+Browser: Google Chrome Version 125.0.x  
+Display Resolution: 1920 × 1080  
+Network: Stable wired connection  
+TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Passed","Marian Sopoliga","6/1/2025 6:53 AM","Functional",""
+"T62","TC03 – Back Button Navigation Mismatch","","C73","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).  
+Steps followed as per test case instructions.
+After returning with the browser “Back” button, the Corporate Account Summary page was displayed.  
+However, the account selection dropdown remained set to “800001 - Checking” instead of reflecting “800000 - Corporate”.
+Dropdown and content were out of sync.    
+Screenshot saved for documentation.
+","","","180s","180s","","","","High","","Checking Account View & Validation – Manual Test Run","","R5","Checking Account View & Validation","1","Scope:
+
+This subsection focuses on validation of the Account Overview page for the 800001 Checking account. It includes tests for account selection, balance and transaction visibility, dropdown behavior, scroll functionality, and session-based access control.
+
+General Preconditions:
+
+Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+Tester is logged in using valid credentials: admin / admin  
+Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+The 800001 Checking account is selected from the dropdown menu
+
+Test Environment:
+
+Operating System: Windows 11 Pro (64-bit)  
+Browser: Google Chrome Version 125.0.x  
+Display Resolution: 1920 × 1080  
+Network: Stable wired connection  
+TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Failed","Marian Sopoliga","6/1/2025 8:22 AM","Functional",""
+"T63","TC04 – Validate Balance Detail","","C74","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).  
+Steps followed as per test case instructions.
+Both “Ending balance” and “Available balance” were visible and displayed identical values.  
+Amounts were shown in USD format with two decimal places (e.g., $117777.44).  
+Displayed balances corresponded to the selected account “800001 - Checking”.  
+Timestamp was visible and followed MM/DD/YY format.
+No functional issues observed.  
+Screenshot saved for documentation.
+","","","120s","120s","","","","Medium","","Checking Account View & Validation – Manual Test Run","","R5","Checking Account View & Validation","1","Scope:
+
+This subsection focuses on validation of the Account Overview page for the 800001 Checking account. It includes tests for account selection, balance and transaction visibility, dropdown behavior, scroll functionality, and session-based access control.
+
+General Preconditions:
+
+Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+Tester is logged in using valid credentials: admin / admin  
+Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+The 800001 Checking account is selected from the dropdown menu
+
+Test Environment:
+
+Operating System: Windows 11 Pro (64-bit)  
+Browser: Google Chrome Version 125.0.x  
+Display Resolution: 1920 × 1080  
+Network: Stable wired connection  
+TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Passed","Marian Sopoliga","6/1/2025 8:49 AM","Functional",""
+"T64","TC05 – Verify Recent Transactions Table","","C75","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).
+Steps followed as per test case instructions.
+The “10 Most Recent Transactions” table was visible and displayed valid rows.
+Column headers “Date”, “Description”, and “Amount” were present and correctly labeled.
+All amounts were displayed in proper USD format with two decimal places.
+Transaction data matched the selected account (800001 – Checking) and was clearly readable.
+No functional issues observed.
+Screenshot saved for documentation.
+","","","120s","120s","","","","Medium","","Checking Account View & Validation – Manual Test Run","","R5","Checking Account View & Validation","1","Scope:
+
+This subsection focuses on validation of the Account Overview page for the 800001 Checking account. It includes tests for account selection, balance and transaction visibility, dropdown behavior, scroll functionality, and session-based access control.
+
+General Preconditions:
+
+Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+Tester is logged in using valid credentials: admin / admin  
+Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+The 800001 Checking account is selected from the dropdown menu
+
+Test Environment:
+
+Operating System: Windows 11 Pro (64-bit)  
+Browser: Google Chrome Version 125.0.x  
+Display Resolution: 1920 × 1080  
+Network: Stable wired connection  
+TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Passed","Marian Sopoliga","6/1/2025 9:06 AM","Functional",""
+"T65","TC06 – Validate Credits","","C76","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).
+Steps followed as per test case instructions.
+The “Credits” section was present and loaded successfully.
+Column headers “Date,” “Description,” and “Amount” were correctly displayed.
+Some credit transaction values were negative, which violates the expected behavior for credit entries.
+All visible credit amounts were not formatted in proper USD currency style with two decimal places.
+Screenshot evidence saved for documentation.","","","120s","120s","","","","Medium","","Checking Account View & Validation – Manual Test Run","","R5","Checking Account View & Validation","1","Scope:
+
+This subsection focuses on validation of the Account Overview page for the 800001 Checking account. It includes tests for account selection, balance and transaction visibility, dropdown behavior, scroll functionality, and session-based access control.
+
+General Preconditions:
+
+Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+Tester is logged in using valid credentials: admin / admin  
+Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+The 800001 Checking account is selected from the dropdown menu
+
+Test Environment:
+
+Operating System: Windows 11 Pro (64-bit)  
+Browser: Google Chrome Version 125.0.x  
+Display Resolution: 1920 × 1080  
+Network: Stable wired connection  
+TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Failed","Marian Sopoliga","6/1/2025 9:39 AM","Functional",""
+"T66","TC07 – Validate Debits","","C77","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).  
+Steps followed as per test case instructions.
+The “Debits” section was present and visible.  
+Column headers “Date,” “Description,” and “Amount” were correctly labeled.  
+At least one debit transaction was displayed.  
+Some visible debit amounts were positive instead of negative.  
+All debit amounts lacked the USD symbol and were not consistently displayed with two decimal places.  
+Multiple entries were formatted incorrectly using exponential notation (e.g., 2.35678E+36).  
+Functional issues observed.  
+Three screenshots saved for documentation.
+Screenshot evidence saved for documentation.
+
+","","","120s","120s","","","","Medium","","Checking Account View & Validation – Manual Test Run","","R5","Checking Account View & Validation","1","Scope:
+
+This subsection focuses on validation of the Account Overview page for the 800001 Checking account. It includes tests for account selection, balance and transaction visibility, dropdown behavior, scroll functionality, and session-based access control.
+
+General Preconditions:
+
+Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+Tester is logged in using valid credentials: admin / admin  
+Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+The 800001 Checking account is selected from the dropdown menu
+
+Test Environment:
+
+Operating System: Windows 11 Pro (64-bit)  
+Browser: Google Chrome Version 125.0.x  
+Display Resolution: 1920 × 1080  
+Network: Stable wired connection  
+TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Failed","Marian Sopoliga","6/1/2025 10:39 AM","Functional",""
+"T67","TC08 – Scroll Functionality","","C78","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).
+Steps followed as per test case instructions.
+All three transaction tables — Most Recent Transactions, Credits, and Debits — were reviewed for scroll behavior.
+A vertical scrollbar appeared automatically on each table when content exceeded the visible area.
+Scroll buttons (up and down) were present and functional in all tables.
+Scrolling was smooth and responsive in each section.
+No data was cut off; all transaction rows were fully accessible and readable.
+No functional issues observed.
+One screenshot saved from the Debits section for documentation.
+
+","","","120s","120s","","","","Low","","Checking Account View & Validation – Manual Test Run","","R5","Checking Account View & Validation","1","Scope:
+
+This subsection focuses on validation of the Account Overview page for the 800001 Checking account. It includes tests for account selection, balance and transaction visibility, dropdown behavior, scroll functionality, and session-based access control.
+
+General Preconditions:
+
+Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+Tester is logged in using valid credentials: admin / admin  
+Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+The 800001 Checking account is selected from the dropdown menu
+
+Test Environment:
+
+Operating System: Windows 11 Pro (64-bit)  
+Browser: Google Chrome Version 125.0.x  
+Display Resolution: 1920 × 1080  
+Network: Stable wired connection  
+TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Passed","Marian Sopoliga","6/1/2025 10:52 AM","Functional",""
+"T68","TC09 – Dropdown Retains Selected Value","","C79","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).
+Steps followed as per test case instructions.
+Initial value in the account dropdown was “800000 – Corporate”.
+Selection was changed to “800001 – Checking” without clicking the “Go” button.
+After refreshing the page, the dropdown reverted back to “800000 – Corporate”.
+The selected value was not retained after reload.
+Expected behavior not met.
+Screenshots saved for documentation.","","","120s","120s","","","","Medium","","Checking Account View & Validation – Manual Test Run","","R5","Checking Account View & Validation","1","Scope:
+
+This subsection focuses on validation of the Account Overview page for the 800001 Checking account. It includes tests for account selection, balance and transaction visibility, dropdown behavior, scroll functionality, and session-based access control.
+
+General Preconditions:
+
+Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+Tester is logged in using valid credentials: admin / admin  
+Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+The 800001 Checking account is selected from the dropdown menu
+
+Test Environment:
+
+Operating System: Windows 11 Pro (64-bit)  
+Browser: Google Chrome Version 125.0.x  
+Display Resolution: 1920 × 1080  
+Network: Stable wired connection  
+TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Failed","Marian Sopoliga","6/1/2025 12:01 PM","Functional",""
+"T69","TC10 – Timestamp Freshness","","C80","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).
+The “As of” timestamp was visible on the Checking Account Summary page.
+Confirmed that the timestamp updated correctly upon page refresh.
+While timezone source is not clearly identified, the component functions as a valid freshness indicator.
+No issues observed.
+Screenshots (before and after) saved for documentation.","","","120s","120s","","","","Low","","Checking Account View & Validation – Manual Test Run","","R5","Checking Account View & Validation","1","Scope:
+
+This subsection focuses on validation of the Account Overview page for the 800001 Checking account. It includes tests for account selection, balance and transaction visibility, dropdown behavior, scroll functionality, and session-based access control.
+
+General Preconditions:
+
+Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+Tester is logged in using valid credentials: admin / admin  
+Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+The 800001 Checking account is selected from the dropdown menu
+
+Test Environment:
+
+Operating System: Windows 11 Pro (64-bit)  
+Browser: Google Chrome Version 125.0.x  
+Display Resolution: 1920 × 1080  
+Network: Stable wired connection  
+TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Passed","Marian Sopoliga","6/1/2025 12:26 PM","Functional",""
+"T70","TC11 – Attempt Direct URL Access Without Login","","C81","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).  
+A direct URL access attempt was made without prior login using:  
+https://demo.testfire.net/bank/showAccount?listAccounts=800001
+The Checking Account Summary page loaded without authentication.  
+No redirect to the login page occurred.  
+This indicates a security flaw – access control is not properly enforced. 
+Screenshot saved for documentation.
+","","","180s","180s","","","","High","","Checking Account View & Validation – Manual Test Run","","R5","Checking Account View & Validation","1","Scope:
+
+This subsection focuses on validation of the Account Overview page for the 800001 Checking account. It includes tests for account selection, balance and transaction visibility, dropdown behavior, scroll functionality, and session-based access control.
+
+General Preconditions:
+
+Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+Tester is logged in using valid credentials: admin / admin  
+Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+The 800001 Checking account is selected from the dropdown menu
+
+Test Environment:
+
+Operating System: Windows 11 Pro (64-bit)  
+Browser: Google Chrome Version 125.0.x  
+Display Resolution: 1920 × 1080  
+Network: Stable wired connection  
+TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Failed","Marian Sopoliga","6/1/2025 12:43 PM","Functional",""
+"T72","TC12 – Validate Transaction Uniqueness","","C84","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).
+Transactions across all three sections (Recent, Credits, Debits) were inspected.
+The """"10 Most Recent Transactions"""" table contained only unique rows.
+In the """"Credits"""" section, six rows displayed identical values across Account, Date, Description, and Amount.
+The """"Debits"""" section also contained multiple transactions with identical visible fields.
+Due to the lack of timestamps or transaction IDs, it is not possible to determine if these are valid duplicates or data anomalies.
+Test marked as passed based on visible field comparison.
+Recommendation: UI should display unique transaction identifiers or timestamps to support proper uniqueness validation.
+Screenshot saved for documentation.
+
+","","","180s","180s","","","","Medium","","Checking Account View & Validation – Manual Test Run","","R5","Checking Account View & Validation","1","Scope:
+
+This subsection focuses on validation of the Account Overview page for the 800001 Checking account. It includes tests for account selection, balance and transaction visibility, dropdown behavior, scroll functionality, and session-based access control.
+
+General Preconditions:
+
+Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+Tester is logged in using valid credentials: admin / admin  
+Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+The 800001 Checking account is selected from the dropdown menu
+
+Test Environment:
+
+Operating System: Windows 11 Pro (64-bit)  
+Browser: Google Chrome Version 125.0.x  
+Display Resolution: 1920 × 1080  
+Network: Stable wired connection  
+TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Passed","Marian Sopoliga","6/1/2025 3:41 PM","Functional",""

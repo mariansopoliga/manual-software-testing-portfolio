@@ -1,0 +1,130 @@
+"ID","Title","Assigned To","Case ID","Comment","Defects","Elapsed","Estimate","Forecast","In Progress","Plan","Plan ID","Priority","References","Run","Run Configuration","Run ID","Section","Section Depth","Section Description","Status","Tested By","Tested On","Type","Version"
+"T74","TC01 – Input Fields Reject HTML/JavaScript Code","","C95","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).
+Steps followed as per test case instructions.
+Entered the string <script>alert('XSS')</script> into the Username field on the login page.
+Clicked the Login button with the Password field left empty.
+A JavaScript alert box was triggered stating:
+""""You must enter a valid password""""
+This confirms that the input was executed as JavaScript, not treated as text.
+This behavior demonstrates a lack of input sanitization and reflects a basic XSS vulnerability.
+Functional issue observed.
+Screenshot saved for documentation.","","","180s","180s","","","","High","","4. UI and Security Validation","","R6","Test Cases","0","","Failed","Marian Sopoliga","6/5/2025 7:01 PM","Security",""
+"T75","TC02 – Password Field Masks Input","","C96","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).
+Steps followed as per test case instructions.
+The login page loaded successfully.
+The Password field was present and displayed as masked input.
+All entered characters were shown as dots, not plain text.
+No visual leakage or formatting issues were observed during input.
+No functional issues observed.
+Screenshot saved for documentation.","","","120s","120s","","","","Medium","","4. UI and Security Validation","","R6","Test Cases","0","","Passed","Marian Sopoliga","6/5/2025 7:10 PM","Functional",""
+"T76","TC03 – Layout Consistency Across Pages","","C97","est executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).
+Steps followed as per test case instructions.
+
+The “Balance Detail” section was present and visually aligned.
+Column layout was correct and spacing consistent.
+No display issues observed.
+Screenshot saved for documentation.
+
+The “10 Most Recent Transactions” table was present but showed column misalignment.
+Header labels did not align with data cells, particularly in the “Description” and “Amount” columns.
+Screenshot saved for documentation.
+
+The “Credits” table layout was inconsistent.
+Column borders were broken in lower rows, and “Amount” values were not aligned with the header.
+Screenshot saved for documentation.
+
+The “Debits” table showed the same structural issues as the Credits table.
+Cell borders were missing, and the “Amount” column was not properly aligned.
+Screenshot saved for documentation.
+
+The Debits section was fully visible and not cut off by the footer.
+Layout overflow did not occur.
+Screenshot saved for documentation.
+
+Functional issue observed.
+Layout rendering is inconsistent across multiple tables.
+Test marked as 'Failed'.
+
+","","","180s","180s","","","","Medium","","4. UI and Security Validation","","R6","Test Cases","0","","Failed","Marian Sopoliga","6/6/2025 10:16 AM","Usability",""
+"T77","TC04 – Access HTTP Instead of HTTPS","","C98","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).
+Steps followed as per test case instructions.
+
+Tester entered the non-secure address http://demo.testfire.net.
+The browser loaded the site over HTTP without redirection to HTTPS.
+Security warning (“Not secure”) was shown in the browser address bar.
+No redirect to https://demo.testfire.net occurred.
+Unsecured content was successfully rendered.
+
+Screenshot saved for documentation.
+
+Security issue observed.
+The application does not enforce HTTPS.
+Test marked as 'Failed'.","","","120s","120s","","","","Medium","","4. UI and Security Validation","","R6","Test Cases","0","","Failed","Marian Sopoliga","6/6/2025 10:30 AM","Security",""
+"T78","TC05 – Test with JavaScript Disabled","","C99","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).  
+JavaScript was disabled for [*.]testfire.net via browser settings.  
+No automation tools or extensions were active during the session.
+
+Tester entered valid credentials (admin / admin) and successfully logged in.  
+The Account Summary page loaded correctly without JavaScript.  
+Tester navigated to """"View Account Summary"""" — the Corporate Account page displayed without errors.  
+Tester clicked on """"Transfer Funds"""" — the page loaded as expected.  
+
+No layout issues, broken functionality, or JavaScript errors were observed.  
+All core functionality remained operational without JavaScript.  
+
+Test marked as **Passed**.  
+","","","240s","240s","","","","Medium","","4. UI and Security Validation","","R6","Test Cases","0","","Passed","Marian Sopoliga","6/6/2025 7:20 PM","Compatibility",""
+"T79","TC06 – Submit Special Characters in All Input Fields","","C100","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).
+JavaScript was enabled and no extensions interfered with the session.
+Tester entered !@#$%^&*() into both the Username and Password fields.
+Clicked the Login button and observed the response.
+The application responded with a standard login error message:
+
+""""Login Failed: We're sorry, but this username or password was not found in our system.""""
+
+No visual, layout, or unexpected behavior occurred.
+The input was handled safely and no functional issues were observed.
+
+Test marked as Passed.","","","180s","180s","","","","High","","4. UI and Security Validation","","R6","Test Cases","0","","Passed","Marian Sopoliga","6/7/2025 8:38 AM","Functional",""
+"T80","TC07 – Verify Label Clarity and Field Association","","C101","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).
+Steps followed as per test case instructions.
+
+Tester navigated to the login page: https://demo.testfire.net/login.jsp.
+Confirmed that the label """"Username:"""" is visibly displayed and clearly associated with the username input field.
+Confirmed that the label """"Password:"""" is visibly displayed and clearly associated with the password input field.
+Both labels are legible and positioned logically in relation to their respective input fields.
+No issues with label clarity, positioning, or usability were observed.
+
+Screenshot saved for documentation.
+Test marked as Passed.","","","120s","120s","","","","Low","","4. UI and Security Validation","","R6","Test Cases","0","","Passed","Marian Sopoliga","6/7/2025 11:01 AM","Usability",""
+"T81","TC08 – Reload Page and Confirm Format Consistency","","C102","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).  
+Steps followed as per test case instructions.  
+
+Tester was logged in and navigated to the Account Summary page: https://demo.testfire.net/bank/main.jsp.  
+Initial layout and table formatting were visually reviewed.  
+Tester reloaded the page using the browser refresh function.  
+Confirmed that the page retained consistent formatting after reload.  
+No misalignment, broken layout, or formatting differences were observed between reload states.  
+
+Screenshot saved for documentation.  
+Test marked as Passed.  ","","","120s","120s","","","","Low","","4. UI and Security Validation","","R6","Test Cases","0","","Passed","Marian Sopoliga","6/8/2025 12:18 PM","Usability",""
+"T82","TC09 – Responsive Layout Check on Window Resize","","C103","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).
+JavaScript was enabled and no extensions interfered with the session.
+Responsive layout testing was performed using Chrome DevTools in Responsive mode.
+
+Tester resized the browser window to the following widths using DevTools Device Toolbar:
+– 375px (mobile view)
+– 768px (tablet view)
+– 1280px (desktop view)
+
+At each screen size, the layout was inspected for:
+– Content alignment
+– Table formatting
+– Visibility and readability of elements
+– Any overlapping or visual breakage
+
+All elements adjusted properly to the selected viewport sizes.
+No layout inconsistencies, overflow issues, or UI defects were observed.
+Application remained fully usable and visually intact across tested widths.
+
+Test marked as Passed.","","","180s","180s","","","","Medium","","4. UI and Security Validation","","R6","Test Cases","0","","Passed","Marian Sopoliga","6/8/2025 1:17 PM","Usability",""
