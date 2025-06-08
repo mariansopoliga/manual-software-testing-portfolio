@@ -39,7 +39,7 @@ This is a real manual testing project in development. It already includes:
 - ✅ **Passed:** 29  
 - ❌ **Failed:** 15  
 - 📁 CSV files: See [`test-runs`](./test-runs)  
-- 🖼️ Screenshots: See [`screenshots`](./screenshots) – visual proof of test execution, including passed, failed, layout, and responsive tests
+- 🖼️ Screenshots: See [screenshots](./screenshots) – sample selection of executed test cases. Full screenshot archive is available on request.
 
 ---
 
