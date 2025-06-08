@@ -1,0 +1,332 @@
+"ID","Title","Assigned To","Case ID","Comment","Defects","Elapsed","Estimate","Forecast","In Progress","Plan","Plan ID","Priority","References","Run","Run Configuration","Run ID","Section","Section Depth","Section Description","Status","Tested By","Tested On","Type","Version"
+"T12","TC01 – View Account Summary","","C46","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).
+Steps followed as per test case instructions.
+The Account Summary page for """"800000 Corporate"""" loads successfully and displays account-specific content without errors or inconsistencies.
+No issues observed.
+Screenshot saved for documentation.
+","","","120s","120s","","","","Medium","","Corporate Account View & Validation – Manual Test Run","","R2","Corporate Account View & Validation","1"," Scope:  
+This subsection focuses on validation of the Account Overview page for the 800000 Corporate account. It includes tests for account selection, summary visibility, transaction structure, dropdown behavior, and session-related access control.
+
+General Preconditions:  
+- Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+- Tester is logged in using valid credentials: admin / admin  
+- Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+- The 800000 Corporate account is selected from the dropdown menu  
+
+Test Environment:  
+- Operating System: Windows 11 Pro (64-bit)  
+- Browser: Google Chrome Version 125.0.x  
+- Display Resolution: 1920 × 1080  
+- Network: Stable wired connection  
+- TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Passed","Marian Sopoliga","5/30/2025 11:25 AM","Functional",""
+"T13","TC02 – Switch Account View from Corporate to Checking","","C47","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).
+Steps followed as per test case instructions.
+Account “800001 - Checking” was selected from the dropdown and confirmed with the GO button.
+User was redirected to the correct Checking Account Summary page.
+No issues observed.
+Screenshot saved for documentation.","","","120s","120s","","","","Medium","","Corporate Account View & Validation – Manual Test Run","","R2","Corporate Account View & Validation","1"," Scope:  
+This subsection focuses on validation of the Account Overview page for the 800000 Corporate account. It includes tests for account selection, summary visibility, transaction structure, dropdown behavior, and session-related access control.
+
+General Preconditions:  
+- Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+- Tester is logged in using valid credentials: admin / admin  
+- Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+- The 800000 Corporate account is selected from the dropdown menu  
+
+Test Environment:  
+- Operating System: Windows 11 Pro (64-bit)  
+- Browser: Google Chrome Version 125.0.x  
+- Display Resolution: 1920 × 1080  
+- Network: Stable wired connection  
+- TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Passed","Marian Sopoliga","5/30/2025 4:34 PM","Functional",""
+"T14","TC03 – Back Button Navigation Mismatch","","C48","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).
+Steps followed as per test case instructions.
+After switching from Corporate to Checking and clicking the browser back button, the account data shown was for Corporate.
+However, the account selection dropdown still displayed """"800001 - Checking"""", resulting in a mismatch.
+Screenshot saved for documentation.","","","180s","180s","","","","High","","Corporate Account View & Validation – Manual Test Run","","R2","Corporate Account View & Validation","1"," Scope:  
+This subsection focuses on validation of the Account Overview page for the 800000 Corporate account. It includes tests for account selection, summary visibility, transaction structure, dropdown behavior, and session-related access control.
+
+General Preconditions:  
+- Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+- Tester is logged in using valid credentials: admin / admin  
+- Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+- The 800000 Corporate account is selected from the dropdown menu  
+
+Test Environment:  
+- Operating System: Windows 11 Pro (64-bit)  
+- Browser: Google Chrome Version 125.0.x  
+- Display Resolution: 1920 × 1080  
+- Network: Stable wired connection  
+- TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Failed","Marian Sopoliga","5/30/2025 5:16 PM","Functional",""
+"T15","TC04 – Validate Balance Detail","","C49","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).  
+Steps followed as per test case instructions.  
+Both """"Ending balance"""" and """"Available balance"""" were visible and showed identical values.  
+Amounts were correctly formatted in USD with two decimal places.  
+Displayed balances matched the selected account """"800000 - Corporate"""".  
+Timestamp was present and displayed in a valid, readable format.  
+No issues observed.  
+Screenshot saved for documentation.","","","120s","120s","","","","Medium","","Corporate Account View & Validation – Manual Test Run","","R2","Corporate Account View & Validation","1"," Scope:  
+This subsection focuses on validation of the Account Overview page for the 800000 Corporate account. It includes tests for account selection, summary visibility, transaction structure, dropdown behavior, and session-related access control.
+
+General Preconditions:  
+- Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+- Tester is logged in using valid credentials: admin / admin  
+- Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+- The 800000 Corporate account is selected from the dropdown menu  
+
+Test Environment:  
+- Operating System: Windows 11 Pro (64-bit)  
+- Browser: Google Chrome Version 125.0.x  
+- Display Resolution: 1920 × 1080  
+- Network: Stable wired connection  
+- TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Passed","Marian Sopoliga","5/30/2025 7:16 PM","Functional",""
+"T16","TC05 – Verify Recent Transactions Table","","C50","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).
+Steps followed as per test case instructions.
+The “10 Most Recent Transactions” section was located successfully.
+Column headers “Date”, “Description”, and “Amount” were present.
+At least one transaction row was displayed with complete and readable data.
+Amounts were shown in USD format with two decimal places.
+No functional issues observed.
+Screenshot saved for documentation.
+
+
+
+","","","120s","120s","","","","Medium","","Corporate Account View & Validation – Manual Test Run","","R2","Corporate Account View & Validation","1"," Scope:  
+This subsection focuses on validation of the Account Overview page for the 800000 Corporate account. It includes tests for account selection, summary visibility, transaction structure, dropdown behavior, and session-related access control.
+
+General Preconditions:  
+- Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+- Tester is logged in using valid credentials: admin / admin  
+- Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+- The 800000 Corporate account is selected from the dropdown menu  
+
+Test Environment:  
+- Operating System: Windows 11 Pro (64-bit)  
+- Browser: Google Chrome Version 125.0.x  
+- Display Resolution: 1920 × 1080  
+- Network: Stable wired connection  
+- TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Passed","Marian Sopoliga","5/31/2025 7:41 AM","Functional",""
+"T17","TC06 – Validate Credits","","C51","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).  
+Steps followed as per test case instructions.  
+The “Credits” section was located and the table was visible.  
+Column headers “Date”, “Description”, and “Amount” were present.  
+Multiple issues were identified:  
+- The most recent transaction was not displayed at the top.  
+- Date format was inconsistent with other sections (e.g., “10 Most Recent Transactions”).  
+- Transactions were duplicated excessively.  
+- Several credit entries contained negative amounts, which is invalid for credits.  
+- Amounts were not consistently formatted with two decimal places.  
+Test failed due to multiple data and presentation issues.  
+Screenshots saved for documentation.
+","","","120s","120s","","","","Medium","","Corporate Account View & Validation – Manual Test Run","","R2","Corporate Account View & Validation","1"," Scope:  
+This subsection focuses on validation of the Account Overview page for the 800000 Corporate account. It includes tests for account selection, summary visibility, transaction structure, dropdown behavior, and session-related access control.
+
+General Preconditions:  
+- Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+- Tester is logged in using valid credentials: admin / admin  
+- Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+- The 800000 Corporate account is selected from the dropdown menu  
+
+Test Environment:  
+- Operating System: Windows 11 Pro (64-bit)  
+- Browser: Google Chrome Version 125.0.x  
+- Display Resolution: 1920 × 1080  
+- Network: Stable wired connection  
+- TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Failed","Marian Sopoliga","5/31/2025 9:04 AM","Functional",""
+"T18","TC07 – Validate Debits","","C52","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).  
+Steps followed as per test case instructions.  
+The “Debits” section was located and the table was visible.  
+Column headers “Date”, “Description”, and “Amount” were present.  
+Multiple issues were identified:  
+- The most recent transaction was not displayed at the top.  
+- Some debit values were positive, which is invalid.  
+- Amounts were not consistently formatted with two decimal places.  
+- An invalid scientific notation format was observed (e.g., “-1E+20”).  
+Test failed due to data inconsistencies.  
+Screenshots saved for documentation.
+
+","","","120s","120s","","","","Medium","","Corporate Account View & Validation – Manual Test Run","","R2","Corporate Account View & Validation","1"," Scope:  
+This subsection focuses on validation of the Account Overview page for the 800000 Corporate account. It includes tests for account selection, summary visibility, transaction structure, dropdown behavior, and session-related access control.
+
+General Preconditions:  
+- Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+- Tester is logged in using valid credentials: admin / admin  
+- Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+- The 800000 Corporate account is selected from the dropdown menu  
+
+Test Environment:  
+- Operating System: Windows 11 Pro (64-bit)  
+- Browser: Google Chrome Version 125.0.x  
+- Display Resolution: 1920 × 1080  
+- Network: Stable wired connection  
+- TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Failed","Marian Sopoliga","5/31/2025 1:23 PM","Functional",""
+"T19","TC08 – Scroll Functionality","","C53","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).  
+Steps followed as per test case instructions.  
+Transaction table contained more entries than fit on screen.  
+Scroll bar appeared correctly, and scrolling was smooth.  
+All transaction rows were accessible, with no layout issues or data loss observed.  
+No functional problems encountered.  
+Screenshot saved for documentation.
+","","","120s","120s","","","","Low","","Corporate Account View & Validation – Manual Test Run","","R2","Corporate Account View & Validation","1"," Scope:  
+This subsection focuses on validation of the Account Overview page for the 800000 Corporate account. It includes tests for account selection, summary visibility, transaction structure, dropdown behavior, and session-related access control.
+
+General Preconditions:  
+- Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+- Tester is logged in using valid credentials: admin / admin  
+- Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+- The 800000 Corporate account is selected from the dropdown menu  
+
+Test Environment:  
+- Operating System: Windows 11 Pro (64-bit)  
+- Browser: Google Chrome Version 125.0.x  
+- Display Resolution: 1920 × 1080  
+- Network: Stable wired connection  
+- TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Passed","Marian Sopoliga","5/31/2025 2:58 PM","Functional",""
+"T20","TC09 – Dropdown Retains Selected Value","","C54","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).  
+Steps followed as per test case instructions.  
+Selected “800000 - Corporate” from the dropdown and confirmed selection.  
+Navigated away from the Account Summary page, then returned.  
+Dropdown retained the selected value as expected.  
+No reset occurred, and the Corporate account remained selected.  
+No functional issues observed.  
+Screenshot saved for documentation.
+","","","120s","120s","","","","Medium","","Corporate Account View & Validation – Manual Test Run","","R2","Corporate Account View & Validation","1"," Scope:  
+This subsection focuses on validation of the Account Overview page for the 800000 Corporate account. It includes tests for account selection, summary visibility, transaction structure, dropdown behavior, and session-related access control.
+
+General Preconditions:  
+- Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+- Tester is logged in using valid credentials: admin / admin  
+- Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+- The 800000 Corporate account is selected from the dropdown menu  
+
+Test Environment:  
+- Operating System: Windows 11 Pro (64-bit)  
+- Browser: Google Chrome Version 125.0.x  
+- Display Resolution: 1920 × 1080  
+- Network: Stable wired connection  
+- TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Passed","Marian Sopoliga","5/31/2025 4:15 PM","Functional",""
+"T21","TC10 – Timestamp Freshness","","C55","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).  
+The “As of” timestamp was visible on the Corporate Account Summary page.  
+Confirmed that the timestamp updated correctly upon page refresh.  
+While timezone source is not clearly identified, the component functions as a valid freshness indicator.  
+No issues observed.  
+Screenshots (before and after) saved for documentation.
+","","","120s","120s","","","","Low","","Corporate Account View & Validation – Manual Test Run","","R2","Corporate Account View & Validation","1"," Scope:  
+This subsection focuses on validation of the Account Overview page for the 800000 Corporate account. It includes tests for account selection, summary visibility, transaction structure, dropdown behavior, and session-related access control.
+
+General Preconditions:  
+- Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+- Tester is logged in using valid credentials: admin / admin  
+- Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+- The 800000 Corporate account is selected from the dropdown menu  
+
+Test Environment:  
+- Operating System: Windows 11 Pro (64-bit)  
+- Browser: Google Chrome Version 125.0.x  
+- Display Resolution: 1920 × 1080  
+- Network: Stable wired connection  
+- TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Passed","Marian Sopoliga","5/31/2025 5:02 PM","Functional",""
+"T22","TC11 – Attempt Direct URL Access Without Login","","C56","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).  
+Opened a new browser window without logging in.  
+Pasted the URL https://demo.testfire.net/bank/main.jsp directly into the address bar.  
+The page loaded successfully, and account summary content was visible without authentication.  
+User was not redirected to the login page as expected.  
+This is a security issue — account details should not be accessible without login.  
+Test failed.  
+Screenshot saved for documentation.
+","","","180s","180s","","","","High","","Corporate Account View & Validation – Manual Test Run","","R2","Corporate Account View & Validation","1"," Scope:  
+This subsection focuses on validation of the Account Overview page for the 800000 Corporate account. It includes tests for account selection, summary visibility, transaction structure, dropdown behavior, and session-related access control.
+
+General Preconditions:  
+- Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+- Tester is logged in using valid credentials: admin / admin  
+- Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+- The 800000 Corporate account is selected from the dropdown menu  
+
+Test Environment:  
+- Operating System: Windows 11 Pro (64-bit)  
+- Browser: Google Chrome Version 125.0.x  
+- Display Resolution: 1920 × 1080  
+- Network: Stable wired connection  
+- TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Failed","Marian Sopoliga","5/31/2025 5:17 PM","Functional",""
+"T73","TC12 – Validate Transaction Uniqueness","","C85","Test executed manually on Google Chrome 125 under Windows 11 Pro (64-bit).
+Steps followed as per test case instructions.
+""""10 Most Recent Transactions"""" table displayed only unique rows.
+Credits table contained multiple identical transactions (same Date, Description, Amount), but this is acceptable due to the absence of timestamp granularity.
+Debits table also included repeated entries with identical fields, consistent with expected batch processing behavior.
+Observed duplicates are not considered functional errors under current test criteria.
+Screenshots saved for documentation.","","","180s","180s","","","","Medium","","Corporate Account View & Validation – Manual Test Run","","R2","Corporate Account View & Validation","1"," Scope:  
+This subsection focuses on validation of the Account Overview page for the 800000 Corporate account. It includes tests for account selection, summary visibility, transaction structure, dropdown behavior, and session-related access control.
+
+General Preconditions:  
+- Tester is on the Altoro Mutual Login Page: https://demo.testfire.net/login.jsp  
+- Tester is logged in using valid credentials: admin / admin  
+- Tester is on the Altoro Mutual Account Summary Page after successful login: https://demo.testfire.net/bank/main.jsp  
+- The 800000 Corporate account is selected from the dropdown menu  
+
+Test Environment:  
+- Operating System: Windows 11 Pro (64-bit)  
+- Browser: Google Chrome Version 125.0.x  
+- Display Resolution: 1920 × 1080  
+- Network: Stable wired connection  
+- TestRail Version: Cloud (testrail.io instance)
+
+
+
+
+","Passed","Marian Sopoliga","6/1/2025 6:42 PM","Functional",""
