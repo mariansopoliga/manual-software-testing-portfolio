@@ -38,8 +38,8 @@ This is a real manual testing project in development. It already includes:
 - **Total Test Cases Executed:** 44  
 - ✅ **Passed:** 29  
 - ❌ **Failed:** 15  
-- 📁 CSV files: See [`/test-runs`](./test-runs)  
-- 🖼️ Screenshots: See [`/screenshots`](./screenshots)
+- 📁 CSV files: See [test-runs](./test-runs)   
+- 🖼️ Screenshots: See [screenshots](./screenshots) – visual proof of test execution, including passed, failed, UI layout, and responsive tests.
 
 ---
 
